@@ -8,31 +8,31 @@
 :root {
     --black: #171717;
     --blue: #477BAC;
-    --light-blue: #5A9CA8;
+    --light-blue: rgb(97, 221, 243);
     --crimson: #7A1B36;
     --pink: #CE205F;
-    --yellow: #FFFE00;
+    --yellow: rgb(247, 247, 86);
     --gray: #9ea2a3;
 }
 
 body {
     background-color: var(--black);
-    color: var(--black);
+    color: var(--crimson);
     font-family: "Arial Black", Gadget, sans-serif;
 }
 
 body a {
     text-decoration: none;
-    color: var(--black);
+    color: white;
 }
 
 section {
     display: flex;
     justify-content: space-evenly;
     width: auto;
-    background-color: var(--gray);
+    background-color: var(--black);
     padding: 25px 25px;
-    margin: 0;
+    
 }
 
 .content-section {
@@ -40,6 +40,10 @@ section {
     justify-content: stretch;
     align-content: center;
     
+}
+
+.content-section p {
+    color: var(--crimson);
 }
 
 .section-title {
@@ -69,8 +73,8 @@ section {
 }
 
 .subtitle {
-    background-color: var(--black);
-    color: white;
+    background-color: var(--pink);
+    color: var(--black);
     font-size: 40px;
     font-weight: lighter;
     margin: 15px 60px;
@@ -91,11 +95,12 @@ header {
 
 header h1 a {
     font-size: 50px;
-    color: white;
+    color: var(--crimson);
 }
 
 header h1 a:hover {
-    text-shadow: 0 0 20px rgb(206, 32, 95);
+    color: white;
+    text-shadow: 0 0 35px rgb(206, 32, 95);
 }
 
 header nav ul {
@@ -108,14 +113,14 @@ header nav ul {
 
 header nav ul a {
     padding: 10px 15px;
-    color: white;
+    color: var(--crimson);
     font-weight: lighter;
     font-size: 1.55vw;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header nav ul li a:hover {
-    text-shadow: 0 0 20px rgb(206, 32, 95);
+    color: white;
+    text-shadow: 0 0 35px rgb(206, 32, 95);
 }
 
 /*hero*/
@@ -130,15 +135,24 @@ header nav ul li a:hover {
     width: 100%;
     height: 600px;
     border-bottom: solid 3px var(--crimson);
+    margin: 0;
 }
 
 /*about me*/
 .about-me {
     padding-top: 60px;
+    height: 600px;
+}
+
+.about-me img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: solid var(--crimson);
 }
 
 .about-me p {
-    text-align: right;
+    text-align: center;
     font-weight: lighter;
 }
 
@@ -172,15 +186,27 @@ header nav ul li a:hover {
     margin: 0;
     padding: 0;
     background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.grid-item:hover {
+    border-color: white;
+    box-shadow: 0 0 40px var(--crimson);
+}
+
+.grid-text .subtitle {
+    background-color: var(--pink);
 }
 
 .big {
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
-    background-image: url("/assets/images/run-buddy.jpg");
+    background-image: url("../images/run-buddy.jpg");
 }
 
-.large-grid-item h2 {
+.grid-text h2 {
     font-size: 1rem;
     width: auto;
     height: auto;
@@ -195,17 +221,33 @@ header nav ul li a:hover {
     text-indent: -999em;
 }
 
+.grid-link:hover {
+    background-color: #fff;
+    opacity: 0.25;
+    }
+
 /*contact*/
 .contact {
-    height: 300px;
+    height: 200px;
 }
 
 .contact-info a {
-    background-color: var(--black);
-    color: white;
+    background-color: var(--pink);
+    color: var(--black);
     font-size: 20px;
     font-weight: lighter;
     margin: 15px 60px;
     padding: 10px 45px;
     border-radius: 15px;
+}
+
+.contact-info a:hover {
+    background-color: white;
+    color: var(--black);
+    font-size: 20px;
+    font-weight: lighter;
+    margin: 15px 60px;
+    padding: 10px 45px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px var(--pink);
 }
