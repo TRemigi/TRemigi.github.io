@@ -26,10 +26,11 @@ body a {
 }
 
 section {
-    display: flex;
-    flex-wrap: wrap;
+    padding: 80px;    
+}
+
+.footer {
     padding: 80px;
-    
 }
 
 .section-title {
@@ -38,6 +39,7 @@ section {
     padding: 0 10px 0 35px;
     margin-right: 35px;
     flex: 1;
+    flex-basis: 0;
     font-size: 1.5em;
 }
 
@@ -45,6 +47,7 @@ section {
     font-size: 20px;
     text-align: center;
     flex: 8;
+    flex-basis: 0;
 }
 
 .subtitle {
@@ -126,7 +129,7 @@ header nav ul li a:hover {
 .about-me {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .about-me img {
@@ -146,13 +149,12 @@ header nav ul li a:hover {
 .work-section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    height: 600px;
+    justify-content: space-between;
 }
 
 .grid-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: stretch;
 }
 
 .work-grid {
@@ -172,7 +174,7 @@ header nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    align-content: flex-end;
+    align-items: flex-end;
     margin: 0;
     padding: 0;
     background-size: cover;
@@ -186,7 +188,7 @@ header nav ul li a:hover {
     box-shadow: 0 0 40px var(--crimson);
 }
 
-.big {
+#big {
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
     background-image: url("../images/run-buddy.jpg");
@@ -194,9 +196,11 @@ header nav ul li a:hover {
 
 .grid-text h2 {
     font-size: 1rem;
-    width: auto;
-    height: auto;
-    flex-basis: auto;
+    margin: 0 0 5px 0;
+}
+
+.grid-text h3 {
+    font-size: 0.75rem;
     margin: 0 0 5px 0;
 }
 
@@ -215,7 +219,7 @@ header nav ul li a:hover {
 /*contact*/
 .contact-section {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-content: center;
     flex-wrap: wrap;
 }
@@ -223,8 +227,8 @@ header nav ul li a:hover {
 .contact-info {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-content: center;
+    justify-content: space-between;
+    align-content: space-evenly;
 }
 
 .contact-info ul {
@@ -233,12 +237,13 @@ header nav ul li a:hover {
     justify-content: space-between;
     align-content: center;
     list-style: none;
-    height: 100%;
-    width: 100%;
 }
 
-.contact-info ul li {
-    flex: 1 25%;
+.conatct-info ul li a {
+    padding: 10px 15px;
+    color: var(--crimson);
+    font-weight: lighter;
+    font-size: 1.55vw;
 }
 
 .contact-info ul li a {
@@ -270,6 +275,10 @@ header nav ul li a:hover {
         border-bottom: solid 3px;
         margin: 0 0 67px 0;
         padding: 0;
+        flex: 1 100%;
+    }
+
+    .content {
         flex: 1 100%;
     }
 
