@@ -9,12 +9,13 @@
     --black: #171717;
     --blue: #477BAC;
     --light-blue: rgb(97, 221, 243);
-    --crimson: #7A1B36;
-    --pink: #CE205F;
+    --crimson: rgb(248, 3, 73);
+    --pink: rgb(253, 200, 27);
     --yellow: rgb(247, 247, 86);
     --gray: #9ea2a3;
 }
 
+/*Generals and Utility*/
 body {
     background-color: var(--black);
     color: var(--crimson);
@@ -29,7 +30,7 @@ section {
     padding: 80px;    
 }
 
-.footer {
+footer {
     padding: 80px;
 }
 
@@ -106,7 +107,7 @@ header nav ul li a {
     padding: 10px 15px;
     color: var(--crimson);
     font-weight: lighter;
-    font-size: 1.55vw;
+    font-size: 2vw;
 }
 
 header nav ul li a:hover {
@@ -179,9 +180,6 @@ header nav ul li a:hover {
     width: 100%;
     height: 250px;
     position: relative;
-}
-
-.grid-item {
     background-image: url("https://placehold.it/200x200");
 }
 
@@ -193,7 +191,9 @@ header nav ul li a:hover {
 #big {
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
+    align-self: stretch;
     background-image: url("../images/run-buddy.jpg");
+    height: 517px;
 }
 
 .grid-text h2 {
@@ -226,13 +226,6 @@ header nav ul li a:hover {
     flex-wrap: wrap;
 }
 
-/* .contact-info {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: space-evenly;
-} */
-
 .contact-info ul {
     display: flex;
     flex-wrap: wrap;
@@ -242,46 +235,36 @@ header nav ul li a:hover {
 }
 
 .contact-info ul li a {
-    background-color: var(--pink);
-    color: var(--black);
+    color: var(--crimson);
     font-size: 20px;
     font-weight: lighter;
+    border-bottom: solid 3px var(--crimson);
     padding: 10px 45px;
     margin: 10px 15px;
-    border-radius: 15px;
     text-decoration: none;
     line-height: 300%;
 }
 
 .contact-info ul li a:hover {
-    background-color: white;
-    box-shadow: 0 0 30px var(--pink);
+    color: white;
+    text-shadow: 0 0 30px var(--crimson);
 }
 
 /*media queries*/
 @media screen and (max-width: 1080px) {
-    .section {
-        justify-content: center;
-        margin: 0 35px;
-    }
-
-    .hero-section .section-title, .about-me .section-title, .work-section .section-title, .contact-section .section-title {
-        text-align: center;
-        border-right: none;
-        border-bottom: solid 3px;
-        margin: 0 0 67px 0;
-        padding: 0;
-        flex: 1 100%;
-    }
-
-    .content {
-        flex: 1 100%;
-    }
-
     header {
         padding-bottom: 0;
         justify-content: center;
         position: relative;
+    }
+
+    section, footer {
+        justify-content: center;
+        margin: 0 35px;
+    }
+
+    .content {
+        flex: 1 100%;
     }
 
     header h1 {
@@ -307,6 +290,15 @@ header nav ul li a:hover {
         height: 300px;
     }
 
+    .hero-section .section-title, .about-me .section-title, .work-section .section-title, .contact-section .section-title {
+        text-align: center;
+        border-right: none;
+        border-bottom: solid 3px;
+        margin: 0 0 67px 0;
+        padding: 0;
+        flex: 1 100%;
+    }
+
      .about-me img {
         height: 150px;
         width: 150px;
@@ -322,6 +314,7 @@ header nav ul li a:hover {
     section, footer {
         padding: 50px;
     }
+
     .hero-section {
         justify-content: center;
         align-items: flex-end;
@@ -330,6 +323,10 @@ header nav ul li a:hover {
 
     .subtitle {
         font-size: 25px;
+    }
+
+    #big {
+        height: auto;
     }
 
     .contact-info ul {
