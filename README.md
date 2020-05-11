@@ -4,7 +4,7 @@ https://tremigi.github.io/
 TRemigi.github.io is the professional portfolio of Taylor Remigi, a student in the University of Utah Full-Stack Coding Bootcamp.
 It features japanese neon inspired CSS styling, links to completed projects, and contact information.
 
-<img src="./assets/images/portfolio-page.png"
+<img src="./assets/images/portfolio-page.png" />
 
 ## Installation
 
