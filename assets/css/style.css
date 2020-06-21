@@ -183,6 +183,10 @@ header nav ul li a:hover {
     background-image: url("https://placehold.it/200x200");
 }
 
+.item-1 {
+    background-image: url("../images/run-buddy.jpg");
+}
+
 .grid-item:hover {
     border-color: white;
     box-shadow: 0 0 40px var(--crimson);
@@ -192,7 +196,7 @@ header nav ul li a:hover {
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
     align-self: stretch;
-    background-image: url("../images/run-buddy.jpg");
+    background-image: url("../images/media4u-index.png");
     height: 517px;
 }
 
