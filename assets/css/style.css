@@ -183,6 +183,7 @@ header nav ul li a:hover {
 
 .grid-item {
     border: solid 2.5px var(--crimson);
+    border-radius: 15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -215,6 +216,10 @@ header nav ul li a:hover {
     align-self: stretch;
     background-image: url("../images/media4u-index.png");
     height: 517px;
+}
+
+.subtitle {
+    border-radius: 0 0 0 15px;
 }
 
 .grid-text h2 {
