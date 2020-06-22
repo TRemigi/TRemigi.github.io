@@ -117,8 +117,10 @@ header nav ul {
 header nav ul li a {
     padding: 10px 15px;
     color: var(--crimson);
-    font-weight: lighter;
+    
     font-size: 2vw;
+    font-family:"Neon W05 Display";
+    font-weight: normal;
 }
 
 header nav ul li a:hover {
@@ -192,6 +194,10 @@ header nav ul li a:hover {
     height: 250px;
     position: relative;
     background-image: url("https://placehold.it/200x200");
+}
+
+.grid-text h2 {
+    font-family: "Arial Black", Gadget, sans-serif;
 }
 
 .item-1 {
