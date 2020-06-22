@@ -182,7 +182,7 @@ header nav ul li a:hover {
 }
 
 .grid-item {
-    border: solid 2.5px var(--crimson);
+    border: solid 4px var(--crimson);
     border-radius: 15px;
     display: flex;
     flex-wrap: wrap;
