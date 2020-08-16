@@ -66,6 +66,7 @@ footer {
     margin: 0;
     padding: 10px 80px;
     line-height: 50%;
+    border-radius: 0 0 0 15px;
 }
 
 h1, h2 {
@@ -205,6 +206,10 @@ header nav ul li a:hover {
     background-image: url("../images/run-buddy.jpg");
 }
 
+.item-2 {
+    background-image: url("../images/apptracker.png");
+}
+
 .grid-item:hover {
     border-color: white;
     box-shadow: 0 0 40px var(--crimson);
@@ -216,10 +221,6 @@ header nav ul li a:hover {
     align-self: stretch;
     background-image: url("../images/media4u-index.png");
     height: 517px;
-}
-
-.subtitle {
-    border-radius: 0 0 0 15px;
 }
 
 .grid-text h2 {
